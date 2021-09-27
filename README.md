@@ -4,7 +4,7 @@ this is to make the repository for the Python Class
 
 ## Getting Started
 
-This is the repository equivilant of Hello World
+This is the repository equivilant of Hello World . Edited with VIM.
 
 ### Prerequisites
 
