@@ -6,7 +6,7 @@ with open("dnsservers.txt", "r") as dnsfile:
     # loop across the lines in the file
     for svr in dnsfile:
         #print and end without a newline
-        print(svr, end="")
-        subprocess.call(["ping","-c 2","-v",svr])
+        print(svr.rstrip("\n"))
+        subprocess.call(["ping","-c 2","-v", svr.rstrip("\n")])
 # no need to close our file - closed automatically
 
