@@ -1,11 +1,5 @@
-dns.example.com
-lookup.tails.example.org
-sonic.dns.example.com
-search.drwiley.example.org
-dns.knuckles.example.org
-emerald.ring.example.org
-lookup.supershoes.example.com
 8.8.8.8
 www.google.com
+www.altavista.com
+www.alta3.com
 www.yahoo.com
-www.state.ms.us
