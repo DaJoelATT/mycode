@@ -1,0 +1,5 @@
+dns.example.com
+sonic.dns.example.com
+lookup.supershoes.example.com
+www.google.com
+www.yahoo.com
