@@ -12,10 +12,10 @@ def main():
     ChoicStr = input("Your choice 1-5 ")
 
     if ChoicStr == "1":
-        subprocess.call("vim")
+        subprocess.call(["vim"," myfile.py"])
     elif ChoicStr == "2":
-        #subprocess.call("ping","8.8.8.8")
-        result = os.system("ping -c 2 8.8.8.8")
+        result = subprocess.call(["ping","-c 2","8.8.8.8"])
+        #result = os.system("ping -c 2 8.8.8.8")
 
         # we a runcode stored in "result"
         # test if that runcode was successful

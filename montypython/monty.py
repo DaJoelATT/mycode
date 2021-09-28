@@ -2,13 +2,15 @@
 round = 0
 answer = " "
 
-while round < 3 and answer.title() != "Brian":
+while round < 3 and answer.title() != "Brian" and answer.lower() != "shrubbery":
     round += 1     # increase the round counter by 1
     answer = input('Finish the movie title, "Monty Python\'s The Life of ______": ')
     if answer.title() == "Brian": # logic to check if user gave correct answer
         print("Correct!")
     elif round == 3:    # logic to ensure round has not yet reached 3
         print("Sorry, the answer was Brian.")
+    elif answer.lower():
+        print("The Knights that say NII Thank you!!")
     else:                 # if answer was wrong
         print("Sorry. Try again!")
 
