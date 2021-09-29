@@ -2,8 +2,13 @@
 
 import netifaces
 
+print("These are the interfaces associated with this device")
 print(netifaces.interfaces())
-print(netifaces)
+IntChoice=input("Which one would you like details on?")
+if IntChoice in netifaces.interfaces():
+    print(netifaces.ifaddresses(IntChoice)[netifaces.AF_INET][0]['addr'])
+else:
+    print("You have chosen an invalid interface")
 #for i in netifaces.interfaces():
         #print('\n**************Details of Interface - ' + i + ' *********************')
         #print("EVERYTHING with netifaces.ifaddresses(i)")
