@@ -15,3 +15,5 @@ with open("vlanconfig.cfg", "r") as configfile:
 ## each item of the list now has the "\n" characters back
 print(configlist)
 print("The number of lines of this file are: ",Counter)
+
+print("Or... in one freaking line... sigh...",len(configlist))
