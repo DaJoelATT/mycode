@@ -62,6 +62,7 @@ def main():
         MoviesReverse.head(5).to_csv("BigMovies.csv")
         print("Done in CSV")
     else:
+         MoviesReverse.head(5).to_excel("BigMovies.xls")
          print("Done in XLS")
 
 
