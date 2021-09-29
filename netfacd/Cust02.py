@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
 import netifaces
-
+print("Which interface would you like to see the MAC Address?")
+print("Your choices are...")
 print(netifaces.interfaces())
-print(netifaces)
+IntChoice=input(" >> ")
+if IntChoice in netifaces.interfaces():
+    print(netifaces.ifaddresses(IntChoice)[netifaces.AF_LINK][0]['addr'])
+else:
+    print("That interface does not exist")
 #for i in netifaces.interfaces():
         #print('\n**************Details of Interface - ' + i + ' *********************')
         #print("EVERYTHING with netifaces.ifaddresses(i)")
