@@ -21,12 +21,16 @@ ChuckAPI = "https://api.chucknorris.io/jokes/random"
 def main():
      ## Find out if the user even knows who Chuck Norris is
      Answer = input("Do you know who Chuck Norris is? ")
+     ## Validate 2 reasonable responses to Yes/No
      if Answer.lower() == "yes" or Answer.lower() == "y":
+         ## They know who Chuck is... Huzzah!  Now get a joke
          resp = requests.get(ChuckAPI)
+         ## Now print the joke
          print(resp.json().get("value"))
      else:
+         ## They don't know who Chuck is.  Print out the response, in color
          print("Then... I have no words... none")
 
-
+##  Best Practice main call
 if __name__ == "__main__":
     main()
