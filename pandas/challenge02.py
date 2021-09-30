@@ -39,7 +39,7 @@ def main():
     MoviesReverse.drop_duplicates(inplace=True)
     
     # take a peek at how our dataframe changed after removing duplicates
-    print(MoviesReverse.shape)
+    print(MoviesReverse)
     
     # sort DataFrame based on Gross Earnings
     sorted_by_gross = MoviesReverse.sort_values(["Gross Earnings"], ascending=False)
