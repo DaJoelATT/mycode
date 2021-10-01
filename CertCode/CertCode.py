@@ -29,7 +29,7 @@ def main():
          print(resp.json().get("value"))
      else:
          ## They don't know who Chuck is.  Print out the response, in color
-         print("Then... I have no words... none")
+         print(crayons.red("Then... I have no words... none"))
 
 ##  Best Practice main call
 if __name__ == "__main__":
